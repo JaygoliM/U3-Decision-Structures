@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Validation {
 
     /*
@@ -6,7 +8,15 @@ public class Validation {
 
     Let's say a user must enter a number greater than 10.
      */
+    public static void main(String[] args) {
+        int number = Integer.parseInt(JOptionPane.showInputDialog("Please enter a number that is greater than 10."));
 
+        if (number > 30){
+            JOptionPane.showMessageDialog(null,"You entered a correct number.");
+        }else {
+            JOptionPane.showMessageDialog(null,"Invalid input, Program closing.");
+        }
+    }
 
 
 }
