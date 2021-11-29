@@ -10,7 +10,7 @@ public class Prom {
 
         int gradeLevel = Integer.parseInt(JOptionPane.showInputDialog("What is your grade level ( 9 , 10 , 11 , 12"));
         int discipline = Integer.parseInt(JOptionPane.showInputDialog("How many suspentions have you had?"));
-        int money = Integer.parseInt(JOptionPane,)
+
     }
 
 }
