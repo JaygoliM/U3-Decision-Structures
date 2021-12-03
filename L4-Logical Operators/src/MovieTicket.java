@@ -1,3 +1,6 @@
+import javax.swing.*;
+import java.util.Locale;
+
 public class MovieTicket {
 
     /*
@@ -15,6 +18,80 @@ public class MovieTicket {
 
 
      */
+    public static void main(String[] args) {
+
+            int time = 2000;
+            int numChild,numAdult,numSeniors;
+            String day= "Saturday";
+            int age = 21;
+            double  price = 0;
+
+            day =day.toLowerCase();
 
 
+
+        System.out.println(price);
+
+
+
+
+    }
+
+        public static double findAdultPrice(int time, String day, int numChild, int numSeniors){
+            double  price = 0;
+
+            if (time >= 1700 && (day.equals("friday") || day.equals("saturday"))){
+                price = 10.00;
+            } else if (time >=1700){
+                price = 8.00;
+            }else{
+                price = 7.00;
+
+            }
+
+            if (numChild > 0){
+                price *= 0.50;
+            }else if (numSeniors > 0 && time <= 1700){
+                price *= 0.50;
+            }
+
+            return price;
+
+        }
+
+
+        public static double findChildPrice(int time, String day){
+            double  price = 0;
+
+            if (time >= 1700 && (day.equals("friday") || day.equals("saturday"))){
+                price = 10.00;
+            } else if (time >=1700){
+                price = 8.00;
+            }else{
+                price = 7.00;
+
+            }
+            return price * 0.50;
+        }
+
+
+
+        public static double findSeniorPrice(int time, String day){
+            double  price = 0;
+
+            if (time >= 1700 && (day.equals("friday") || day.equals("saturday"))){
+                price = 10.00;
+            } else if (time >=1700){
+                price = 8.00;
+            }else{
+                price = 7.00;
+
+            }
+
+            if (time <= 1700){
+                price *= 0.50;
+            }
+
+            return price;
+    }
 }

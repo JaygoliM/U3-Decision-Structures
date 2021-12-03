@@ -187,5 +187,5 @@ Notice that the **AND** statement is enclosed in parenthesis, and the **NOT** op
 
 `(!x + y) != !(x + y)`
 
-[pizza]:./src/PizzaCost.java
+[pizza]:./src/ScubaGear.java
 [gameover]:./src/GameOver.java
